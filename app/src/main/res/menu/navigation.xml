@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/American_menuItem"
+        android:icon="@drawable/dominoamerican"
+        android:title="American" />
+
+    <item
+        android:id="@+id/Normal_menuItem"
+        android:icon="@drawable/dominonormal"
+        android:title="Normal" />
+
+</menu>
