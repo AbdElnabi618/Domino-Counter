@@ -8,20 +8,10 @@
     android:layout_height="match_parent"
     tools:context="kh618.dominocounter.Main2Activity"
     android:orientation="vertical">
-    <fragment
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/fram"
-        android:layout_weight="1">
-
-    </fragment>
-    <android.support.design.widget.BottomNavigationView
-        android:id="@+id/navigation"
-
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="?android:attr/windowBackground"
-        app:menu="@menu/navigation"
-        />
+        android:layout_weight="1"/>
 
 </LinearLayout>

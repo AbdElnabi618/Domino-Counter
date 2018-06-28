@@ -5,7 +5,18 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="paley">player</string>
     <string name="hello_blank_fragment">hello</string>
+    <string name="game">"هتلعب ايه امركي ولا عادي ؟"</string>
+    <string name="playerNum">"كام واحد ؟"</string>
+    <string-array name="GameType">
+        <item> "امريكي" </item>
+        <item> "عادى" </item>
+    </string-array>
+    <string-array name="numberOfPlayers">
+        <item> "ثنائي" </item>
+        <item> "ثلاثي" </item>
+        <item> "رباعي" </item>
+    </string-array>
+    <string name="intentKey">"key"</string>
 </resources>

@@ -2,12 +2,164 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="kh618.dominocounter.Normal3">
+    tools:context="kh618.dominocounter.Normal3"
+    android:background="@color/gray"
+    >
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/textN3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="كسبت كام ؟"
+                    android:textColor="@color/pru"
+                    android:textSize="22sp" />
+            </android.support.design.widget.TextInputLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="12dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/player_1_normal3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:text="Player 1"
+                        android:textColor="@color/pru"
+                        android:textSize="20sp" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+"
+                        android:background="@color/pru"
+                        android:textColor="@color/gray"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/addPlayer_1_normal3"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/scorePlayer_1_normal"
+                        android:layout_marginLeft="65dp"
+                        android:textColor="@color/pru"
+                        android:text="0"
+                        android:textSize="22sp"
+                        android:layout_marginTop="200dp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/pru"
+                    android:orientation="vertical"
+                    android:layout_weight="0">
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/player_2_normal3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:text="Player 2"
+                        android:textColor="@color/pru"
+                        android:textSize="20sp" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+"
+                        android:background="@color/pru"
+                        android:textColor="@color/gray"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/addPlayer_2_normal3"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/scorePlayer_2_normal3"
+                        android:layout_marginLeft="65dp"
+                        android:textColor="@color/pru"
+                        android:text="0"
+                        android:textSize="22sp"
+                        android:layout_marginTop="200dp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/pru"
+                    android:orientation="vertical"
+                    android:layout_weight="0">
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/player_3_normal3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:text="Player 3"
+                        android:textColor="@color/pru"
+                        android:textSize="20sp" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+"
+                        android:background="@color/pru"
+                        android:textColor="@color/gray"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/addPlayer_3_normal3"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/scorePlayer_3_normal3"
+                        android:layout_marginLeft="65dp"
+                        android:textColor="@color/pru"
+                        android:text="0"
+                        android:textSize="22sp"
+                        android:layout_marginTop="200dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+            <Button
+                android:id="@+id/clearN3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:text="clear"
+                android:background="@color/pru"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+    </ScrollView>
 
 </FrameLayout>

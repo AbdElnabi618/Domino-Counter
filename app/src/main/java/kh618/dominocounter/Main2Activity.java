@@ -3,33 +3,12 @@ package kh618.dominocounter;
 import android.annotation.TargetApi;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.design.widget.BottomNavigationView;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.view.MenuItem;
-import android.widget.TextView;
-import android.widget.Toolbar;
+
+import java.util.Objects;
 
 public class Main2Activity extends AppCompatActivity {
-
-
-
-    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
-            = new BottomNavigationView.OnNavigationItemSelectedListener() {
-
-        @Override
-        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-            switch (item.getItemId()) {
-                case R.id.American_menuItem:
-                    return true;
-                case R.id.Normal_menuItem:
-
-                    return true;
-            }
-            return false;
-        }
-    };
+    String extra = "";
 
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     @Override
@@ -37,8 +16,33 @@ public class Main2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
-        BottomNavigationView navigation =findViewById(R.id.navigation);
-        navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+            extra = Objects.requireNonNull(getIntent().getExtras()).getString(getResources().getString(R.string.intentKey));
+
+
+
     }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        switch (extra) {
+            case "A24":
+                getSupportFragmentManager().beginTransaction().replace(R.id.fram, new American2_4()).commit();
+                break;
+            case "A3":
+                getSupportFragmentManager().beginTransaction().replace(R.id.fram, new American3()).commit();
+                break;
+            case "N24":
+                getSupportFragmentManager().beginTransaction().replace(R.id.fram, new Normal2_4()).commit();
+                break;
+            case "N3":
+                getSupportFragmentManager().beginTransaction().replace(R.id.fram, new Normal3()).commit();
+                break;
+        }
+    }
+
+
+
+
 
 }

@@ -11,7 +11,7 @@
         <!-- Customize your theme here. -->
         <item name="colorPrimary">#550456</item>
         <item name="colorPrimaryDark">@android:color/darker_gray</item>
-        <item name="colorAccent">#000</item>
+        <item name="colorAccent">#550456</item>
         <item name="android:textColorHint">@color/pru</item>
     </style>
 

@@ -15,7 +15,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <ImageView
@@ -27,7 +27,41 @@
                 android:src="@drawable/logo"
 
                 android:layout_weight="1"/>
-    <RadioGroup
+            <Spinner
+                android:id="@+id/GameType"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:entries="@array/GameType"
+                android:prompt="@string/game"
+                />
+
+            <Spinner
+                android:layout_marginTop="30dp"
+                android:id="@+id/numberOfPlayers"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:entries="@array/numberOfPlayers"
+                android:prompt="@string/playerNum"
+                />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:onClick="h"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:background="@color/pru"
+                    android:textColor="@color/gray"
+                    android:layout_marginTop="120dp"
+                    android:text="يلا نلعب" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+<!--
+  <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -78,25 +112,4 @@
             android:textColor="@color/pru"
             />
     </RadioGroup>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:orientation="horizontal"
-                android:id="@+id/btn_layout"
-                android:visibility="visible"
-                android:layout_weight="1">
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:onClick="h"
-                    android:textSize="20dp"
-                    android:layout_weight="1"
-                    android:background="@color/pru"
-                    android:textColor="@color/gray"
-                    android:text="يلا نلعب" />
-            </LinearLayout>
-        </LinearLayout>
-    </ScrollView>
-</LinearLayout>
+-->

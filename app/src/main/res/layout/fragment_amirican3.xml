@@ -15,79 +15,181 @@
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="كسبت كام ؟"
-                android:textColor="@color/pru"
-                android:textSize="22sp"
-                />
+
+                <EditText
+                    android:id="@+id/textA3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="كسبت كام ؟"
+                    android:textColor="@color/pru"
+                    android:textSize="22sp" />
             </android.support.design.widget.TextInputLayout>
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="250dp"
-                android:orientation="horizontal">
-
-                <RelativeLayout
-                    android:layout_width="200dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1">
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="12dp">
+                <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/player_1_amr3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentTop="true"
-                        android:layout_centerHorizontal="true"
-                        android:text="@string/paley"
+                        android:layout_marginLeft="30dp"
+                        android:text="Player 1"
                         android:textColor="@color/pru"
-                        android:textSize="20sp"
-                        android:id="@+id/textView" />
+                        android:textSize="20sp" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:background="@color/pru"
+                android:textColor="@color/gray"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:id="@+id/addPlayer_1_amr3"
+                />
 
                     <Button
-                        android:id="@+id/btn1"
-                        android:layout_width="50dp"
+                        android:id="@+id/removePlayer_1_amr3"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_below="@+id/textView"
-                        android:layout_marginTop="31dp"
-                        android:layout_toEndOf="@+id/textView"
-                        android:layout_toRightOf="@+id/textView"
-                        android:background="@color/pru"
-                        android:text="+"
-                        android:textColor="@color/gray"
-                        android:textSize="26sp" />
-
-                    <Button
-                        android:id="@+id/button"
-                        android:layout_width="50dp"
-                        android:layout_height="wrap_content"
-                        android:layout_alignBaseline="@+id/btn1"
-                        android:layout_alignBottom="@+id/btn1"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentStart="true"
-                        android:layout_marginLeft="35dp"
-                        android:layout_marginStart="35dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="50dp"
                         android:background="@color/pru"
                         android:text="-"
+                        android:textColor="@color/gray" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/scorePlayer_1_amr3"
+                android:layout_marginLeft="65dp"
+                android:textColor="@color/pru"
+                android:text="0"
+                android:textSize="22sp"
+                android:layout_marginTop="100dp"/>
+
+        </LinearLayout>
+                <LinearLayout
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/pru"
+                    android:orientation="vertical"
+                    android:layout_weight="0">
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/player_2_amr3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:text="Player 2"
+                        android:textColor="@color/pru"
+                        android:textSize="20sp" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+"
+                        android:background="@color/pru"
                         android:textColor="@color/gray"
-                        android:textSize="30sp" />
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/addPlayer_2_amr3"
+                        />
+
+                    <Button
+                        android:id="@+id/removePlayer_2_amr3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="50dp"
+                        android:background="@color/pru"
+                        android:text="-"
+                        android:textColor="@color/gray" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20sp"
+                        android:id="@+id/scorePlayer_2_amr3"
+                        android:layout_marginLeft="65dp"
                         android:textColor="@color/pru"
                         android:text="0"
-                        android:layout_alignBottom="@+id/btn1"
-                        android:layout_marginTop="37dp"
+                        android:textSize="22sp"
+                        android:layout_marginTop="100dp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/pru"
+                    android:orientation="vertical"
+                    android:layout_weight="0">
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/player_3_amr3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:text="Player 3"
+                        android:textColor="@color/pru"
+                        android:textSize="20sp" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+"
+                        android:background="@color/pru"
+                        android:textColor="@color/gray"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/addPlayer_3_amr3"
                         />
 
-                </RelativeLayout>
-                <LinearLayout
-                    android:layout_width="5dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="@color/pru"/>
+                    <Button
+                        android:id="@+id/removePlayer_3_amr3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="50dp"
+                        android:background="@color/pru"
+                        android:text="-"
+                        android:textColor="@color/gray" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/scorePlayer_3_amr3"
+                        android:layout_marginLeft="65dp"
+                        android:textColor="@color/pru"
+                        android:text="0"
+                        android:textSize="22sp"
+                        android:layout_marginTop="100dp"/>
+
+                </LinearLayout>
             </LinearLayout>
+
+            <Button
+                android:id="@+id/clearA3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/pru"
+                android:text="clear"
+                android:textColor="@color/gray" />
         </LinearLayout>
+
     </ScrollView>
 
 </FrameLayout>

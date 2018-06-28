@@ -16,7 +16,7 @@
             android:focusedByDefault="false"
             >
             <EditText
-                android:id="@+id/n2"
+                android:id="@+id/textNor24"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="كسبت كام ؟"
@@ -39,30 +39,30 @@
                     android:id="@+id/player1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="player"
+                    android:text="Player 1"
                     android:textColor="@color/pru"
                     android:textSize="20sp"
-                    app:layout_constraintBottom_toTopOf="@+id/add1"
+                    app:layout_constraintBottom_toTopOf="@+id/addPlayer1Nor24"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.504"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <Button
-                    android:id="@+id/add1"
+                    android:id="@+id/addPlayer1Nor24"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@color/pru"
                     android:text="+"
                     android:textColor="@color/gray"
                     android:textSize="26sp"
-                    app:layout_constraintBottom_toTopOf="@+id/player1_score"
+                    app:layout_constraintBottom_toTopOf="@+id/scorePlayer1Nor24"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/player1" />
 
                 <TextView
-                    android:id="@+id/player1_score"
+                    android:id="@+id/scorePlayer1Nor24"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="42dp"
@@ -73,7 +73,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/add1" />
+                    app:layout_constraintTop_toBottomOf="@+id/addPlayer1Nor24" />
 
             </android.support.constraint.ConstraintLayout>
 
@@ -89,34 +89,35 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
+
                 <TextView
                     android:id="@+id/player2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="player"
+                    android:text="Player 2"
                     android:textColor="@color/pru"
                     android:textSize="20sp"
-                    app:layout_constraintBottom_toTopOf="@+id/add2"
+                    app:layout_constraintBottom_toTopOf="@+id/addPlayer2Nor24"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.504"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <Button
-                    android:id="@+id/add2"
+                    android:id="@+id/addPlayer2Nor24"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@color/pru"
                     android:text="+"
                     android:textColor="@color/gray"
                     android:textSize="26sp"
-                    app:layout_constraintBottom_toTopOf="@+id/player2_score"
+                    app:layout_constraintBottom_toTopOf="@+id/scorePlayer2Nor24"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/player2" />
 
                 <TextView
-                    android:id="@+id/player2_score"
+                    android:id="@+id/scorePlayer2Nor24"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="42dp"
@@ -127,10 +128,11 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/add2" />
+                    app:layout_constraintTop_toBottomOf="@+id/addPlayer2Nor24" />
             </android.support.constraint.ConstraintLayout>
         </LinearLayout>
         <Button
+            android:id="@+id/clearN24"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/gray"
